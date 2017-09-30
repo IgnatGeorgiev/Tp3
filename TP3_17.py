@@ -50,21 +50,18 @@ elif(type == 'D') :
             k-=1
         print()
         i-=1
-elif(type == 'E') :
-    i = 1
-    while i <= n:
-        k=0
-        j = 0 
-        while j < i:
-            print(" ", end="")
+elif(type == 'E') :  
+    i = 0
+    while i<n :
+        j = 0
+        while j<n-i-1:
+            print(' ', end='')
             j+=1
-        #while k < i:
-         #   if( i != 1 ):
-          #      print("*", end="")
-           # k+=1
-        print("*"*((2*i)-1), end="")
+        k = 0
+        while k < (2*i)+1:
+            print('*', end='')
+            k+=1
         print()
         i+=1
-
 #elif(type == 'F') :
 #elif(type == 'G') :
